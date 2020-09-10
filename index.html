@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>V-Guru login page</title>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="icon" href="favicon(1).ico">
+<style>
+
+body {
+  background-image: url('bgimage.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  width:80%
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+
+}
+</style>
+</head>
+<body>
+
+<h2>Login Form</h2>
+<table cellspacing="20">
+  <tr>
+    <td><img src="circle-cropped(1).png" alt="V-guru logo"></td>
+    <td><h1>WELCOME TO ACHIEVER's LEARNING</h1>
+    <p>GET OUR RAW RESOURCE (slogan.....)</p></td>
+  </tr>
+</table>
+<form action="Vguru.html" method="post">
+
+
+  <div class="container">
+    <label for="name"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="name" required><br>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required><br>
+
+    <button type="submit">Login</button><br>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+</form>
+
+</body>
+</html>
